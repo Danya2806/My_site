@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой интерактивный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Добро пожаловать на мой сайт!</h1>
+        
+        <div class="button-section">
+            <button onclick="changeText()">Изменить текст</button>
+            <button onclick="changeColor()">Изменить цвет</button>
+            <button onclick="showMessage()">Показать сообщение</button>
+            <button onclick="resetAll()">Сбросить всё</button>
+        </div>
+
+        <div class="counter-section">
+            <p>Счётчик: <span id="counter">0</span></p>
+            <button onclick="increaseCounter()">+1</button>
+            <button onclick="decreaseCounter()">-1</button>
+        </div>
+
+        <div class="user-section">
+            <input type="text" id="userName" placeholder="Введите ваше имя">
+            <button onclick="greetUser()">Поприветствовать</button>
+            <p id="greeting"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
