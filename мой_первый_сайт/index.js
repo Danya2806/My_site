@@ -81,3 +81,12 @@ function greetUser() {
         greetingElement.style.color = '#28a745';
     }
 }
+
+function hideShowSection() {
+    const counterSection = document.querySelector('.counter-section');
+    if (counterSection.style.display === 'none') {
+        counterSection.style.display = 'block';
+    } else {
+        counterSection.style.display = 'none';
+    }
+}
